@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Canteen – Order Food Online</title>
+  <meta name="description" content="Smart Canteen – Modern online food ordering for PES College of Engineering Mandya. Browse the menu, add items, and place your order in seconds." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="brand">
+      <div class="logo">SC</div>
+      <div class="brand-text">
+        <h1>Smart Canteen</h1>
+        <p>PES College of Engineering Mandya</p>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Menu</a></li>
+        <li><a href="order.html">My Order</a></li>
+        <li><span class="cart-badge" id="cartCount">🛒 0</span></li>
+        <li><button class="theme-toggle" id="themeToggle">🌓 Theme</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Delicious meals, <span class="accent">delivered fast.</span></h2>
+    <p>Skip the queue. Browse today's menu, pick your favorites, and we'll have it ready when you arrive.</p>
+    <a href="#menu" class="hero-btn">View Menu ↓</a>
+  </section>
+
+  <!-- MAIN -->
+  <main id="menu">
+    <h2 class="section-title">Our Menu</h2>
+    <p class="section-sub">Freshly prepared, served hot — choose your meal below.</p>
+
+    <div class="controls">
+      <input type="text" id="searchBox" class="search-box" placeholder="🔍 Search for dishes..." />
+      <div class="tabs">
+        <button class="tab active" data-category="All">All</button>
+        <button class="tab" data-category="Main Foods">Main Foods</button>
+        <button class="tab" data-category="Beverages">Beverages</button>
+      </div>
+    </div>
+
+    <div id="menuContainer"></div>
+  </main>
+
+  <!-- BILL BAR -->
+  <div class="bill-bar">
+    <div class="bill-total" id="liveTotal">Total: <span>₹0</span></div>
+    <div class="btn-group">
+      <button id="calcBtn" class="btn btn-outline">Calculate Total</button>
+      <a id="placeOrderBtn" href="order.html" class="btn btn-primary">Place Order →</a>
+    </div>
+  </div>
+
+  <footer>
+    Smart Canteen © 2026 | Digital Food Ordering Platform
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
